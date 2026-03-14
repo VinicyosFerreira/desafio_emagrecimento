@@ -37,7 +37,7 @@ export function VideoSection() {
             <div className="w-full rounded-2xl overflow-hidden shadow-xl border border-border bg-muted aspect-video relative">
             <iframe 
               className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/SHQ_g5UYe1g" 
+              src="https://www.youtube.com/embed/gj3wy3TnYh0" 
               title="A importância da alimentação e exercícios físicos" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               referrerPolicy="strict-origin-when-cross-origin" 
