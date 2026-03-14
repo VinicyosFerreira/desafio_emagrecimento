@@ -18,7 +18,7 @@ export function Hero() {
           Transforme seu corpo em <span className="pb-2 inline-block">30 Dias</span>
         </h1>
         
-        <p className="text-lg sm:text-xl md:text-2xl text-zinc-100 max-w-[42rem] mx-auto font-medium">
+        <p className="text-lg sm:text-xl md:text-2xl text-zinc-100 max-w-2xl mx-auto font-medium">
           Participe do nosso desafio de emagrecimento e descubra o método comprovado para perder peso com saúde, sem dietas malucas.
         </p>
         
