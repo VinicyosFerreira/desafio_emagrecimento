@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -33,10 +34,10 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <h3 className="font-semibold text-foreground text-lg">Navegação</h3>
             <ul className="flex flex-col gap-3 text-sm text-muted-foreground">
-              <li><a href="#sobre" className="hover:text-foreground transition-colors">Sobre o Método</a></li>
-              <li><a href="#beneficios" className="hover:text-foreground transition-colors">Benefícios</a></li>
-              <li><a href="#depoimentos" className="hover:text-foreground transition-colors">Testemunhos</a></li>
-              <li><a href="#faq" className="hover:text-foreground transition-colors">Dúvidas Frequentes</a></li>
+              <li><Link to="/about" className="hover:text-foreground transition-colors">Sobre o Método</Link></li>
+              <li><Link to="/benefits" className="hover:text-foreground transition-colors">Benefícios</Link></li>
+              <li><Link to="/testimonials" className="hover:text-foreground transition-colors">Testemunhos</Link></li>
+              <li><Link to="/" className="hover:text-foreground transition-colors">Início</Link></li>
             </ul>
           </div>
 
