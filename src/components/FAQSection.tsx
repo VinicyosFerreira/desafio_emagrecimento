@@ -4,31 +4,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { FAQS } from "@/constants/faq";
 
 export function FAQSection() {
-  const faqs = [
-    {
-      question: "Como o desafio de 30 dias funciona?",
-      answer: "Você receberá acesso imediato à nossa plataforma com o plano alimentar completo, cronograma de exercícios diários e acesso à comunidade exclusiva para suporte, tudo passo a passo para os próximos 30 dias."
-    },
-    {
-      question: "Preciso ir à academia?",
-      answer: "Não! Todos os exercícios foram desenhados para serem feitos em casa, utilizando apenas o peso do seu próprio corpo, em sessões curtas de 20 a 30 minutos."
-    },
-    {
-      question: "O plano alimentar é muito restritivo?",
-      answer: "Pelo contrário. Nosso foco é a reeducação alimentar. Ensinamos você a fazer escolhas inteligentes, permitindo que você coma de tudo, de forma balanceada e sem sofrimento."
-    },
-    {
-      question: "Terei suporte durante o desafio?",
-      answer: "Absolutamente! Você fará parte de uma comunidade ativa com outras pessoas no mesmo objetivo, além de contar com o suporte da nossa equipe técnica para tirar dúvidas diárias."
-    },
-    {
-      question: "E se eu não puder começar imediatamente?",
-      answer: "O seu acesso é vitalício! Você pode se inscrever agora para garantir o desconto atual e iniciar o desafio no momento que for mais adequado para a sua rotina."
-    }
-  ];
-
   return (
     <section id="faq" className="py-20 md:py-32 bg-muted/10">
       <div className="container mx-auto px-4 md:px-6 max-w-4xl">
@@ -42,7 +20,7 @@ export function FAQSection() {
         </div>
 
         <Accordion type="single" collapsible className="w-full">
-          {faqs.map((faq, index) => (
+          {FAQS.map((faq, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
               <AccordionTrigger className="text-left text-lg font-medium text-foreground hover:text-primary">
                 {faq.question}
